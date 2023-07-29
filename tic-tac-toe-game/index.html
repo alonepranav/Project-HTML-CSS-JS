@@ -1,0 +1,70 @@
+<!-- 
+
+    Time : Learning HTML, CSS & JS    
+    Project : Tic-Tac-Toe Game
+    Details : A simple tic tac toe  game using HTML, CSS and JS.
+    Date : March / 2023 
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://alonepranav.onrender.com/image/SC.png" type="image/png">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS File -->
+    <script type="text/javascript" src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- For player turn number information -->
+        <div class="player-info ">
+            <span>X</span>
+            Player 1, you're turn
+        </div>
+
+        <!-- The X,O grid box -->
+        <div class="grid main">
+            <div class="box" data-sign=""></div>
+            <div class="box" data-sign=""></div>
+            <div class="box" data-sign=""></div>
+            <div class="box" data-sign=""></div>
+            <div class="box" data-sign=""></div>
+            <div class="box" data-sign=""></div>
+            <div class="box" data-sign=""></div>
+            <div class="box" data-sign=""></div>
+            <div class="box" data-sign=""></div>
+        </div>
+
+        <!-- Winner and player information -->
+        <div class="grid result-section">
+            <div class="box result-div">Player 1 = X</div>
+            <div class="box result-div winner">Winner <span>No Winner</span></div>
+            <div class="box result-div">Player 2 = O</div>
+        </div>
+    </div>
+
+    <!-- Pop Up Box -->
+    <div class="winner-pop-up">
+        <div class="pop-up-main">
+            <p>Winner</p>
+            <button type="submit">Play Again</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

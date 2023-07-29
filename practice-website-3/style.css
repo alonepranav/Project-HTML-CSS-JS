@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 3rem;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.3rem;
+}
+
+.navbar i {
+    font-size: 1.8rem;
+    color: #fff;
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar input {
+    padding: 6px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+@media screen and (max-width:900px) {
+    .navbar i {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .2s ease;
+    }
+
+    ul.show {
+        height: 260px;
+        padding-block: 20px;
+    }
+
+    ul input {
+        color: #fff;
+        background-color: #000;
+    }
+
+    .navbar ul li a {
+        color: #000;
+    }
+}
+
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    justify-content: space-evenly;
+    gap: 20px;
+    min-height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.home .text {
+    padding: 10px;
+    color: #fff;
+    width: 500px;
+}
+
+.home .text button {
+    letter-spacing: 2px;
+    padding: 7px 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.home .img {
+    height: 400px;
+}
+
+.home .img img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgb(75, 75, 75);
+    height: 100%;
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.services .row {
+    box-shadow: 0 0 5px grey;
+    margin: 30px 0;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services .row .text {
+    width: 75%;
+}
+
+.services .row .img {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.services .row .img img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact {
+    margin: 40px auto;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0;
+}
+
+form button {
+    padding: 7px 15px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    letter-spacing: 2px;
+}
+
+.footer {
+    width: 100%;
+    background: rgb(0, 33, 40);
+    padding: 10px 0;
+    color: #fff;
+}
+
+@media screen and (max-width:750px) {
+    .services .row {
+        padding: 10px;
+    }
+
+    .services .row .text {
+        padding: 10px;
+        width: 100%;
+        order: 2;
+    }
+
+    .services .row .img {
+        order: 1;
+    }
+
+    .home .img img {
+        width: 280px;
+        height: 340px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home .text {
+        padding: 20px 25px
+    }
+}

@@ -1,0 +1,118 @@
+ ::-webkit-scrollbar {
+     display: none;
+ }
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background: rgb(50, 49, 49);
+ }
+
+ .main {
+     border-radius: 7px;
+     position: relative;
+     height: 595px;
+     width: 300px;
+     background: rgb(255, 255, 255);
+     padding: 20px;
+ }
+
+ h2 {
+     text-align: center;
+     padding-bottom: 15px;
+ }
+
+ .top-content {
+     text-align: center;
+ }
+
+ .top-content span {
+     font-size: 1.6rem;
+ }
+
+ ul {
+     height: 35%;
+     overflow: scroll;
+ }
+
+ li {
+     list-style: none;
+     background: #dedbdb;
+     padding: 3px;
+     margin: 10px 0;
+ }
+
+ li .text {
+     display: flex;
+ }
+
+ li p {
+     padding: 5px 5px;
+     width: 90%;
+ }
+
+ li.credit .type {
+     background-color: rgb(3, 192, 3);
+     padding: 5px 10px;
+     color: #fff;
+ }
+
+ li.debit .type {
+     background-color: rgb(255, 0, 0);
+     padding: 5px 10px;
+     color: #fff;
+ }
+
+ .icons {
+     height: 0;
+     overflow: hidden;
+ }
+
+ .icons i {
+     padding: 2px 5px;
+     margin-inline: 5px;
+     font-size: 1.2rem;
+ }
+
+ .expense {
+     padding: 10px;
+     background: #dcdcdc;
+     position: absolute;
+     bottom: 0;
+     width: 86%;
+ }
+
+ .expense .box {
+     margin-block: 20px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .box .text1,
+ .box .text2 {
+     background: rgb(32, 202, 2);
+     width: 50%;
+     text-align: center;
+     padding: 5px 0;
+     color: #fff;
+     border-radius: 5px;
+     margin-inline: 5px;
+     border: 1px solid black;
+ }
+
+ .box .text2 {
+     background: red;
+ }
+
+ input {
+     width: 90%;
+ }

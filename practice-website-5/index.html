@@ -1,0 +1,102 @@
+<!-- 
+
+    Time : Learning HTML, CSS & JS    
+    Project : Website 
+    Details : A simple website using HTML, CSS and JS.
+    Date : March / 2023 
+
+ -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://alonepranav.onrender.com/image/SC.png" type="image/png">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FW</div>
+        <ul></ul>
+        <i class="bi bi-list nav-icon" onclick="open_close()"></i>
+    </nav>
+
+    <!-- Home -->
+    <div class="home" id="home">
+        <div class="text">
+            <h2>Eat Food Right</h2>
+            <br />
+            <p>Eat healthy food it is good for your health</p>
+            <br />
+            <button class="main">MENU</button>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="text">
+            <h4>About Us</h4>
+            <br />
+            <h2>We've been Making Healthy
+                <br />
+                Food for last 10 Years
+            </h2>
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio ipsum magni nemo aliquid doloremporro
+                enim? Saepe, ad dicta?</p>
+        </div>
+        <div class="img"><img src="./images/about-photo.jpg" alt=""></div>
+    </div>
+
+    <!-- Category -->
+    <div class="category" id="category">
+        <h2>TYPES OF FOOD</h2>
+        <br>
+        <div class="food-category">
+        </div>
+    </div>
+
+    <!-- Food Menu -->
+    <div class="menu" id="menu">
+        <h2 class="h2">Food Menu</h2>
+        <div class="menu-item">
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <div class="img">
+            <img src="./images/restraunt-image.jpg" alt="">
+        </div>
+        <form>
+            <h2>Contact Us</h2>
+            <div class="field">
+                <input placeholder="Name" type="text" name="" id="">
+            </div>
+            <div class="field">
+                <input placeholder="Email" type="email" name="" id="" required>
+            </div>
+            <div class="field">
+                <textarea placeholder="Message" name="" id="" required></textarea>
+            </div>
+            <div class="field">
+                <button class="main" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

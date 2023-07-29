@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgb(0, 208, 255);
+    width: 350px;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.accordian {
+    padding: 15px 10px;
+    background: linear-gradient(to right, rgb(74, 147, 250), rgb(255, 68, 208));
+    border-radius: 3px;
+    margin-block: 15px;
+}
+
+p {
+    color: #fff;
+    padding: 10px 0;
+    overflow: hidden;
+    transition: all 1s linear;
+}
+
+.answer {
+    height: 0;
+    overflow: hidden;
+    transition: .2s ease;
+}

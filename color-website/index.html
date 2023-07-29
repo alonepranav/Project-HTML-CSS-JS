@@ -1,0 +1,127 @@
+<!-- 
+
+    Time : Learning HTML, CSS & JS    
+    Project : Color Website 
+    Details : This is a website  that do a lot of stuff with colors like random color generation, gradient generation and other using HTML, CSS and JS.
+    Date : March / 2023 
+
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://alonepranav.onrender.com/image/SC.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Website</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!------------------- Navbar --------------------->
+    <nav>
+        <div class="links">
+            <div class="link"><a href="#">Home</a></div>
+            <div class="link"><a href="#random-color">Random Color</a></div>
+            <div class="link"><a href="#gradient">Gradients</a></div>
+            <div class="link"><a href="#about">About</a></div>
+        </div>
+    </nav>
+
+    <!----------------- Home page ------------------->
+    <div id="home">
+        <div class="container">
+            <h1>Random Color</h1>
+        </div>
+    </div>
+
+    <!----------------- Random Color page ------------->
+    <div id="random-color">
+        <div class="box">
+            <div class="input">
+                <input type="text" name="" id="color-input">
+                <i class="bi bi-clipboard icon" id="clipboard-icon" title="Copy to clipboard"></i>
+            </div>
+            <div class="button" id="generate_color">
+                <button>Generate Random Color</button>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ Gradient page ---------------->
+    <div id="gradient">
+        <div class="gradient-box">
+            <div class="container">
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="field">
+                <div class="content">
+                    <select name="" id="select_box">
+                        <option value="to right">to right</option>
+                        <option value="to left">to left</option>
+                        <option value="to bottom">to bottom</option>
+                        <option value="to top">to top</option>
+                        <option value="to top left">to top left</option>
+                        <option value="to top right">to top right</option>
+                        <option value="to bottom left">to bottom left</option>
+                        <option value="to bottom right">to bottom right</option>
+                    </select>
+                    <div><span style="color:#fff;">Choose from here : </span>
+                        <input type="color" name="" id="color1">
+                        <input type="color" name="" id="color2">
+                    </div>
+                </div>
+                <div>
+                    <input type="button" id="color_btn" value="Get Random Gradient">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- About Section ------------------->
+    <div id="about">
+        <div class="text">
+            <p>
+                This is a simple and responsive website made using HTML, CSS
+                and Javascript.
+                This website generate a random color for you,
+                which you can copy and use for your code.
+            </p>
+
+            <div class="links">
+                <br>
+                Catch me here : <br>
+                <div class="media">
+                    <i style="color: black;" class="bi bi-github icons"></i>
+                    &nbsp; <a href="https://github.com/PranavShilavane" target="_blank"> PranavShilavane</a>
+                </div>
+                <div class="media">
+                    <i style="color: rgb(255, 55, 5);" class="bi bi-instagram icons"></i>
+                    &nbsp;<a href="https://www.instagram.com/pranavshilavane" target="_blank"> PranavShilavane</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
