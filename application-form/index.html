@@ -1,0 +1,77 @@
+<!-- 
+
+    Time : Learning HTML, CSS & JS    
+    Project : Application Form 
+    Details : This is an accordian using HTML, CSS and JS.
+    Date : March / 2023 
+
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="applicationForm">
+        <h2>Application Form</h2>
+        <form>
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input type="text" name="" id="firstName" placeholder="Enter First Name...">
+            </div>
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="" id="lastName" placeholder="Enter Last Name...">
+            </div>
+            <div class="field">
+                <label for="userEmail">Email</label>
+                <input type="email" name="" id="userEmail" placeholder="Enter Email...">
+            </div>
+            <div class="field">
+                <label for="jobRole">Job Role</label>
+                <select name="" id="">
+                    <option value="frontend">Front End Developer</option>pt
+                    <option value="backend">Back End Developer</option>pt
+                    <option value="fullstack">Full Stack Developer</option>pt
+                </select>
+            </div>
+            <div class="textArea">
+                <label for="userAddress">Enter Address</label>
+                <textarea name="" id="userAddress" cols="20" rows="3"></textarea>
+            </div>
+            <div class="field">
+                <label for="userCity">City</label>
+                <input type="text" name="" id="userCity" placeholder="Enter City...">
+            </div>
+            <div class="field">
+                <label for="userPincode">Pincode</label>
+                <input type="number" name="" id="userPincode" placeholder="Enter Pincode...">
+            </div>
+            <div class="field">
+                <label for="startDate">Start Date</label>
+                <input type="date" name="" id="startDate">
+            </div>
+            <div class="field">
+                <label for="userCV">Upload Your CV</label>
+                <input type="file" name="" id="userCV">
+            </div>
+        </form>
+        <div class="submit">
+            <input type="submit" value="Apply Now">
+        </div>
+    </div>
+
+</body>
+
+</html>

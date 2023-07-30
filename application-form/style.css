@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+
+#applicationForm {
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 6px;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.field {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px 0;
+}
+
+form label {
+    font-size: 15px;
+    padding: 0 3px;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 3px 5px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    outline: none;
+}
+
+form textarea:focus,
+form select:focus,
+form input:focus {
+    border: 2px solid rgb(255, 0, 119);
+}
+
+.textArea {
+    grid-column: 1 / span 2;
+}
+
+textarea {
+    width: 100%;
+}
+
+.submit {
+    display: flex;
+    justify-content: right;
+}
+
+.submit input {
+    background-color: rgb(255, 0, 68);
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid black;
+    font-weight: 900;
+    border-radius: 4px;
+    transition: .2s linear;
+}
+
+.submit input:hover {
+    background-color: rgb(58, 58, 244);
+}
+
+@media (max-width:500px) {
+    .textArea {
+        grid-column: 1 / span 1;
+    }
+
+    #applicationForm {
+        min-width: 300px;
+    }
+
+    .field {
+        padding: 1px 0;
+    }
+
+    form {
+        grid-gap: 10px;
+    }
+}
