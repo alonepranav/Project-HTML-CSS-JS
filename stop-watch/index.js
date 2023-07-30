@@ -1,5 +1,5 @@
-let sec = 57;
-let min = 58;
+let sec = 0;
+let min = 0;
 let millSec = 0;
 let minDiv = document.getElementById("min");
 let secDiv = document.getElementById("sec");
