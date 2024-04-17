@@ -1,6 +1,4 @@
 
-
-
 let addBtn = document.querySelector(".add");
 let render_div = document.querySelector("#add");
 let noteNo = 1;
@@ -40,8 +38,8 @@ const renderData = () => {
         render_div.insertAdjacentHTML("beforeend", `
         <div class="box" data-key="${id}">
             <p>Notes No ${i}
-                <i class="bi bi-trash" onclick="remove(this)"></i>
-                <i class="bi bi-save"  onclick="save(this)"></i>
+                <i class="bi bi-trash" onclick="remove(this)" title="Delete Note"></i>
+                <i class="bi bi-save"  onclick="save(this)" title="Save Note"></i>
             </p>
             <textarea>${localStorage.getItem(id)}</textarea>
         </div>`)
