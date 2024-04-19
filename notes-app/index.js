@@ -11,7 +11,7 @@ const getUniqueId = () => {
     for (let i = 0; i < 7; i++)
         id += key.charAt(Math.floor(Math.random() * 100 % key.length));
     return id
-} 
+}  
 
 const save = (id) => {
     localStorage.setItem(id.parentElement.parentElement.dataset.key, id.parentElement.nextElementSibling.value);
