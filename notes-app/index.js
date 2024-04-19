@@ -2,7 +2,7 @@
 let addBtn = document.querySelector(".add");
 let render_div = document.querySelector("#add");
 let noteNo = 1;
-
+ 
 
 
 const getUniqueId = () => {
