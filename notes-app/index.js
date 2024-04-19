@@ -12,7 +12,7 @@ const getUniqueId = () => {
         id += key.charAt(Math.floor(Math.random() * 100 % key.length));
     return id
 }  
-
+ 
 const save = (id) => {
     localStorage.setItem(id.parentElement.parentElement.dataset.key, id.parentElement.nextElementSibling.value);
     renderData()
