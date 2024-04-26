@@ -16,7 +16,7 @@ const render_user_info = ({ public_repos, login, avatar_url, bio, followers, fol
                 ${name && `<h2>${name}</h2>`}
                 ${login && `<h3>${login}</h3>`}
                 <br>
-                ${public_repos != undefined && `<p>Pulic Repositories: ${public_repos}</p>`}
+                ${public_repos != undefined && `<p>Public Repositories: ${public_repos}</p>`}
                 ${followers && `<p>Followers : ${followers}</p>`}
                 ${following && `<p>Following : ${following}</p>`}
                 ${location && `<p>Location : ${location}</p>`}
